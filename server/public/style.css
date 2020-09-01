@@ -61,3 +61,17 @@ img {
     border-radius: 50%;
 }
 
+.type {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.stats {
+    background-color: white;
+    color: black;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 20px;
+}

@@ -61,13 +61,15 @@ export default class App extends React.Component {
 			{(this.state.pokemon).map(pokemon => <Pokemon pokemon={pokemon}/>)}<br></br>
 			<h1 className="name">{this.state.name}</h1>
 			<h2>{this.state.description}</h2>
-			<h3>{`Type: ${this.state.type}`}</h3>
-			<h3>{`HP: ${this.state.hp}`}</h3>
-			<h3>{`Attack: ${this.state.attack}`}</h3>
-			<h3>{`Defense: ${this.state.defense}`}</h3>
-			<h3>{`Speed: ${this.state.speed}`}</h3>
-			<h3>{`Special Attack: ${this.state.specialAttack}`}</h3>
-			<h3>{`Special Defense: ${this.state.specialDefense}`}</h3>
+			<h3 className="type">{`Type: ${this.state.type}`}</h3>
+			<div className="stats">
+				<h3>{`HP: ${this.state.hp}`}</h3>
+				<h3>{`Attack: ${this.state.attack}`}</h3>
+				<h3>{`Defense: ${this.state.defense}`}</h3>
+				<h3>{`Speed: ${this.state.speed}`}</h3>
+				<h3>{`Special Attack: ${this.state.specialAttack}`}</h3>
+				<h3>{`Special Defense: ${this.state.specialDefense}`}</h3>
+			</div>
 		  </div>
 		);
 	  }
